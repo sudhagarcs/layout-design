@@ -1,0 +1,24 @@
+.btn {
+  border-radius: 3px;
+  &:focus {
+    outline: none;
+  }
+}
+.dpl-btn-primary {
+  color: $white;
+  background-color: $primary-color;
+  border-color: $primary-color-dark;
+  &:hover,
+  &:focus {
+    background: $primary-color-dark;
+    color: $white;
+  }
+}
+
+.dpl-btn-danger {
+  background: $secondary-color;
+  &:hover,
+  &:focus {
+    background: $secondary-color-lighter;
+  }
+}

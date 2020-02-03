@@ -1,0 +1,21 @@
+.side-nav {
+  width: 100px;
+  background: $grey-lightest;
+  height: calc(100vh - 60px);
+  border-right: 1px solid $grey-lighter;
+  .side-nav-item {
+    color: $grey-dark;
+    cursor: pointer;
+    padding: 15px 0;
+    border-bottom: 1px solid $grey-lighter;
+    &:hover {
+      color: $grey-darker;
+    }
+    i {
+      font-size: 30px;
+    }
+    .item-name {
+      font-size: 12px;
+    }
+  }
+}

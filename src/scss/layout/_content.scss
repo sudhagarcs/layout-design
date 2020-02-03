@@ -1,0 +1,23 @@
+.main-content {
+  margin: 30px;
+  width: 100%;
+}
+
+.dpl-panel {
+  padding: 30px;
+  background: $grey-lightest2;
+  border: 1px solid $grey-lighter;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  .dpl-panel-title {
+    text-transform: uppercase;
+    border-bottom: 1px solid $grey-lighter;
+    padding-bottom: 5px;
+    color: $primary-color;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .dpl-panel-content {
+    padding-top: 15px;
+  }
+}

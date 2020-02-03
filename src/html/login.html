@@ -1,0 +1,46 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
+
+<%@ include file="/WEB-INF/layout/header.jsp" %>
+    
+    
+    <main class="main-container d-flex">
+    <%@ include file="/WEB-INF/layout/sidenav.jsp" %>  
+      
+      <section class="main-content">
+        <div class="dpl-panel">        
+        	<h4>Welcome ${pageContext.request.userPrincipal.name}</h4>    
+        </div>
+        
+        <div class="dpl-panel">
+          <div class="dpl-panel-header">
+            <h4 class="dpl-panel-title">Transaction</h4>
+          </div>
+          <div class="dpl-panel-content module-menu d-flex flex-column">
+            <a class="menu-item d-flex align-items-center" href="/web/master/loademployee"
+              ><i class="fas fa-plus-circle"></i> Add New Employee</a
+            >
+            <a class="menu-item d-flex align-items-center"
+              ><i class="fas fa-users"></i> Employee List</a
+            >
+            <a class="menu-item d-flex align-items-center"
+              ><i class="far fa-calendar-alt"></i> Employee Attendance</a
+            >
+          </div>
+          <div class="dpl-panel-contenr"></div>
+        </div>
+
+      </section>
+    </main>
+   
+
+    <!-- Load Javascript files -->
+    <script src="${contextPath}/resources/vendor/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="${contextPath}/resources/vendor/js/popper.min.js"></script>
+    <script src="${contextPath}/resources/vendor/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="${contextPath}/resources/js/app.min.js"></script>
+</body>
+</html>

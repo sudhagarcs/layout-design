@@ -1,0 +1,27 @@
+.top-nav {
+  background: $primary-color;
+  height: 60px;
+  color: $white;
+  .logo,
+  .top-nav-menu {
+    padding: 5px 25px;
+    line-height: 50px;
+    position: relative;
+    .user-name {
+      color: $white;
+    }
+    .dropdown-menu {
+      margin-top: 8px;
+      border-radius: 0;
+      width: 100%;
+      padding: 0;
+    }
+    .dropdown-item {
+      line-height: 30px;
+      &:hover,
+      &:active {
+        background: $grey-lightest;
+      }
+    }
+  }
+}

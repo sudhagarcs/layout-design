@@ -1,0 +1,26 @@
+.form-control {
+  border-radius: 3px;
+  border: 1px solid $border-color;
+  &:focus {
+    border-color: $primary-color;
+    box-shadow: none;
+  }
+}
+.nav-link {
+  padding: 0;
+  color: $white;
+}
+
+.error {
+  color: $error-color;
+  input,
+  select {
+    border: 1px solid $error-color;
+    &:focus {
+      border: 1px solid $error-color;
+    }
+  }
+}
+a:hover {
+  text-decoration: none;
+}
